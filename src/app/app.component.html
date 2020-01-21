@@ -8,15 +8,15 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
-                {{p.title}}
-              </ion-label>
-            </ion-item>
+          <ion-menu-toggle auto-hide="true">
+
+            <ion-item routerLink="/login">login</ion-item>
+            <ion-item routerLink="/check-list">ckeck-list</ion-item>
+            <ion-item routerLink="/diario-bordo">Diário de bordo</ion-item>
           </ion-menu-toggle>
         </ion-list>
+      
+        
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

@@ -1,23 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
 
-import { HomePage } from './home.page';
+import { IonicModule } from '@ionic/angular';
+
+import { AddDiarioBordoPageRoutingModule } from './add-diario-bordo-routing.module';
+
+import { AddDiarioBordoPage } from './add-diario-bordo.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ])
+    AddDiarioBordoPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [AddDiarioBordoPage]
 })
-export class HomePageModule {}
+export class AddDiarioBordoPageModule {}

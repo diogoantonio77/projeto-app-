@@ -4,16 +4,28 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    path: 'help',
+    loadChildren: () => import('./help/help.module').then( m => m.HelpPageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'diario-bordo',
+    loadChildren: () => import('./diario-bordo/diario-bordo.module').then( m => m.DiarioBordoPageModule)
+  },
+  {
+    path: 'check-list',
+    loadChildren: () => import('./check-list/check-list.module').then( m => m.CheckListPageModule)
+  },
+  {
+    path: 'add-diario-bordo',
+    loadChildren: () => import('./add-diario-bordo/add-diario-bordo.module').then( m => m.AddDiarioBordoPageModule)
   }
 ];
 
