@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatePickerModule } from 'ionic4-date-picker';
+
 
 @Component({
   selector: 'app-add-diario-bordo',

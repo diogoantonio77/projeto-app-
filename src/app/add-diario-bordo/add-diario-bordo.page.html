@@ -3,37 +3,112 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <ion-title>
+      Adicionar diario de bordo
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-list>
-  <div>
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">Condutor:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+
+
+    <div>
+      <ion-item>
+        <ion-label>Unidade</ion-label>
+        <ion-select value="brown" okText="Salvar" cancelText="Cancelar">
+          <ion-select-option>Carmo do paranaiba</ion-select-option>
+          <ion-select-option>Bom despacho</ion-select-option>
+          <ion-select-option>Montes claros</ion-select-option>
+          <ion-select-option>Ibiá</ion-select-option>
+          <ion-select-option>Unaí</ion-select-option>
+          <ion-select-option>São Gotardo</ion-select-option>
+          <ion-select-option>Formosa</ion-select-option>
+          <ion-select-option>Cristalina</ion-select-option>
+          <ion-select-option>Catalão</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
     <ion-item>
-      <ion-label position="floating">Unidade:</ion-label>
-      <ion-input></ion-input>
+      <ion-label>Centro de custo</ion-label>
+      <ion-select value="brown" okText="Salvar" cancelText="Cancelar">
+        <ion-select-option>Comercial</ion-select-option>
+        <ion-select-option>Máquinas</ion-select-option>
+        <ion-select-option>Peças</ion-select-option>
+        <ion-select-option>Serviços</ion-select-option>
+      </ion-select>
     </ion-item>
-   </div>
 
-  <div>
-    <ion-item>
-      <ion-label position="floating">Placa do veiculo:</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-   </div>
+    <div>
+      <ion-item>
+        <ion-label position="floating">Placa do veiculo:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
 
-   <ion-item>
-    <ion-label>Selecionar</ion-label>
-    <ion-select value="brown" okText="Salvar" cancelText="Cancelar">
-      <ion-select-option >Comercial</ion-select-option>
-      <ion-select-option >Máquinas</ion-select-option>
-      <ion-select-option >Peças</ion-select-option>
-      <ion-select-option >Serviços</ion-select-option>
-    </ion-select>
-  </ion-item>
+    <div>
+      <ion-item>
+        <ion-label position="floating">Dia e horário de saída:</ion-label>
+        <ion-datetime displayFormat="DD-MMM-YYYY" pickerFormat="DD-MMM-YY HH:mm"></ion-datetime>
+      </ion-item>
+    </div>
 
-</ion-list>
+    <div>
+      <ion-item>
+        <ion-label position="floating">Origem:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">destino:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">Finalidade:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+
+    
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">horario de chegada:</ion-label>
+        <ion-datetime displayFormat="hh-mm-A"></ion-datetime>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">Km inicial:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">Km final:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+
+
+  </ion-list>
 
 
 

@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'add-diario-bordo',
     loadChildren: () => import('./add-diario-bordo/add-diario-bordo.module').then( m => m.AddDiarioBordoPageModule)
+  },  {
+    path: 'add-check-list',
+    loadChildren: () => import('./add-check-list/add-check-list.module').then( m => m.AddCheckListPageModule)
   }
+
 ];
 
 @NgModule({
